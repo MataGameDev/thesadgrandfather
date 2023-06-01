@@ -10,7 +10,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c41c8199-66f9-4c48-a371-e74c3e1af459" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.thesadgrandfather/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.thesadgrandfather/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pancho/BP_PAncho.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pancho/BP_PAncho.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Input/IMC_Default.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Developers/_JoseMiguel/TestViejitoTriste.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Developers/_JoseMiguel/TestViejitoTriste.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/thesadgrandfather/thesadgrandfatherCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/thesadgrandfather/thesadgrandfatherCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/thesadgrandfather/thesadgrandfatherCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/thesadgrandfather/thesadgrandfatherCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,19 +29,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C++ Project.thesadgrandfather">
     <configuration name="UE5" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -162,6 +166,9 @@
       <updated>1685484105287</updated>
       <workItem from="1685484106735" duration="680000" />
       <workItem from="1685514350285" duration="1031000" />
+      <workItem from="1685595032931" duration="8373000" />
+      <workItem from="1685635276296" duration="2597000" />
+      <workItem from="1685638778793" duration="3193000" />
     </task>
     <servers />
   </component>
