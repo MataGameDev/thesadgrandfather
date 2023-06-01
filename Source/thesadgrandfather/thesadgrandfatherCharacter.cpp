@@ -9,6 +9,13 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "FrameTypes.h"
+#include "BehaviorTree/BehaviorTreeTypes.h"
+#include "Kismet/KismetArrayLibrary.h"
+#include "Kismet/KismetMathLibrary.h"
+#include "Kismet/KismetSystemLibrary.h"
+#include "Containers/Array.h"
+
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -64,10 +71,13 @@ void AthesadgrandfatherCharacter::BeginPlay()
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
 	}
+	//SaveTimer();
 }
 
 //////////////////////////////////////////////////////////////////////////
 // Input
+
+
 
 void AthesadgrandfatherCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
@@ -83,6 +93,9 @@ void AthesadgrandfatherCharacter::SetupPlayerInputComponent(class UInputComponen
 
 		//Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AthesadgrandfatherCharacter::Look);
+
+		//Crounch
+		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Triggered, this, &AthesadgrandfatherCharacter::Crounched);
 
 	}
 
@@ -124,6 +137,50 @@ void AthesadgrandfatherCharacter::Look(const FInputActionValue& Value)
 	}
 }
 
+void AthesadgrandfatherCharacter::Crounched()
+{
+	
+	if(crounch)
+	{
+		ACharacter::UnCrouch();
+		crounch = false;
+	}
+	else
+	{
+		ACharacter::Crouch();
+		crounch = true;
+	}
+}
+/*
+void AthesadgrandfatherCharacter::SaveTransforms()
+{
+	TrueTransforms.Insert(GetActorTransform(), 0);
 
+	if( TrueTransforms.Num()> MaxTransforms)
+	{
+		TrueTransforms.SetNum(MaxTransforms,false);
+		//UKismetArrayLibrary::Array_Resize(TrueTransforms, MaxTransforms);
+	}
+}
+
+void AthesadgrandfatherCharacter::SaveTimer()
+{
+	UKismetSystemLibrary::K2_SetTimer(this, "SaveTransforms", 1.0f, true) = TimeHadle;
+}
+
+void AthesadgrandfatherCharacter::ReverseTime()
+{
+	UKismetSystemLibrary::K2_ClearAndInvalidateTimerHandle(this, TimeHadle);
+	//UKismetArrayLibrary::Array_LastIndex(Transforms)
+	while (Counts <= (TrueTransforms.Num()-1))
+	{
+		SetActorTransform(TrueTransforms[Counts],false);
+		Counts++;
+	}
+	
+	SaveTimer();
+	Counts = 0;
+}
+*/
 
 
